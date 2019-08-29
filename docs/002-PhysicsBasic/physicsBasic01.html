@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Physics Basic 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics="debug: true">
+      <!-- Camera -->
+      <a-camera></a-camera>
+      <!-- Floor -->
+      <a-plane static-body rotation="-90 0 0" width="10" height="10" color="gray"></a-plane>
+      <!-- Immovable box -->
+      <a-box static-body position="0 5 -10" width="5" height="1" depth="1" color="yellow"></a-box>
+      <!-- Dynamic box -->
+      <a-box dynamic-body position="0 10 -3" width="1" height="1" depth="1" color="blue"></a-box>
+    </a-scene>
+  </body>
+</html>
